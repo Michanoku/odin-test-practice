@@ -1,5 +1,6 @@
 import { capitalize } from './capitalize.js';
 import { reverse } from './reverse.js';
+import { calculator } from './calculator.js';
 
 /* eslint-disable no-undef */
 
@@ -19,4 +20,9 @@ test('Reverse a string.', () => {
 
 test('Reverse a string.', () => {
   expect(reverse('Terranigma')).toBe('amginarreT');
+});
+
+// calculator
+test('Add two numbers.', () => {
+  expect(calculator.add(1, 2)).toBe(3);
 });
