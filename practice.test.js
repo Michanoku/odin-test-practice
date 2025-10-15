@@ -26,3 +26,7 @@ test('Reverse a string.', () => {
 test('Add two numbers.', () => {
   expect(calculator.add(1, 2)).toBe(3);
 });
+
+test('Add two numbers.', () => {
+  expect(calculator.add(18, 51)).toBe(69);
+});
