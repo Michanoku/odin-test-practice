@@ -1,6 +1,8 @@
 import { capitalize } from './capitalize.js';
 import { reverse } from './reverse.js';
 
+/* eslint-disable no-undef */
+
 test('Capitalize first letter of string.', () => {
   expect(capitalize('michanoku')).toBe('Michanoku');
 });
