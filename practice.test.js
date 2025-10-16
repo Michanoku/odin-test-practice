@@ -72,3 +72,24 @@ test('Case preservation.', () => {
 test('Punctuation preservation.', () => {
   expect(caesarCipher('Hello, World!', 3)).toBe('Khoor, Zruog!');
 });
+
+// analyzeArray
+test('Analyze array.', () => {
+  const object = analyzeArray([1,8,3,4,2,6]);
+  expect(object).toEqual({
+    average: 4,
+    min: 1,
+    max: 8,
+    length: 6
+  });
+});
+
+test('Analyze array.', () => {
+  const object = analyzeArray([9,15,2,64,420,69,19,27]);
+  expect(object).toEqual({
+    average: 78,
+    min: 2,
+    max: 420,
+    length: 8,
+  });
+});
