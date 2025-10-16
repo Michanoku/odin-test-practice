@@ -46,3 +46,4 @@ test('Divide two numbers.', () => {
 test('Divide two numbers.', () => {
   expect(calculator.divide(64, 32)).toBe(2);
 });
+
