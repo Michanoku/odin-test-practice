@@ -30,3 +30,7 @@ test('Add two numbers.', () => {
 test('Add two numbers.', () => {
   expect(calculator.add(18, 51)).toBe(69);
 });
+
+test('Subtract two numbers.', () => {
+  expect(calculator.subtract(3, 2)).toBe(1);
+});
