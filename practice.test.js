@@ -54,3 +54,20 @@ test('Multiply two numbers.', () => {
 test('Multiply two numbers.', () => {
   expect(calculator.multiply(191, 2)).toBe(382);
 });
+
+// caesarCipher
+test('', () => {
+  expect(caesarCipher('abc', 5)).toBe('fgh');
+});
+
+test('Wrapping.', () => {
+  expect(caesarCipher('xyz', 3)).toBe('abc');
+});
+
+test('Case preservation.', () => {
+  expect(caesarCipher('HeLLo', 3)).toBe('KhOOr');
+});
+
+test('Punctuation preservation.', () => {
+  expect(caesarCipher('Hello, World!', 3)).toBe('Khoor, Zruog!');
+});
