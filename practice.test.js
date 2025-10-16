@@ -1,6 +1,7 @@
 import { capitalize } from './capitalize.js';
 import { reverse } from './reverse.js';
 import { calculator } from './calculator.js';
+import { caesarCipher } from './caesar.js';
 
 /* eslint-disable no-undef */
 
