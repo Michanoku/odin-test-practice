@@ -39,3 +39,6 @@ test('Subtract two numbers.', () => {
   expect(calculator.subtract(641, 221)).toBe(420);
 });
 
+test('Divide two numbers.', () => {
+  expect(calculator.divide(400, 20)).toBe(20);
+});
