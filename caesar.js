@@ -1,5 +1,6 @@
 function caesarCipher(clearText, shift) {
-  
+
+
 }
 
 // For each character in the string:
@@ -33,7 +34,14 @@ function calculateNewPosition (codes, shift) {
     newValue -= 26;
   }
   return newValue + codes.asciiOffset;
+}
 
+function createClearTextArray(clearText) {
+  const clearTextArray = new Array();
+  for (let i = 0; i < clearText.length; i++) {
+    clearTextArray.push(clearText[i]);
+  }
+  return clearTextArray;
 }
 
 export { caesarCipher }
