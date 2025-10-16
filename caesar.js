@@ -1,13 +1,5 @@
 function caesarCipher(clearText, shift) {
-  if (clearText === 'abc' && shift === 5) {
-    return 'fgh';
-  } else if (clearText === 'HeLLo' && shift === 3) {
-    return 'KhOOr';
-  } else if (clearText === 'Hello, World!' && shift === 3) {
-    return 'Khoor, Zruog!';
-  } else {
-    return 'abc'
-  }
+  
 }
 
 // For each character in the string:
@@ -15,7 +7,7 @@ function caesarCipher(clearText, shift) {
 // return position and subtract value
 // or return null
 
-function getPosition(character) {
+function getCurrentPosition(character) {
   // Get the ASCII value for the character
   const ASCIIValue = character.charCodeAt(0);
   // Determine if it's a capital letter or not and return position in alphabet
@@ -33,6 +25,15 @@ function getPosition(character) {
   } 
   // If the character was not alphabetical, return null
   return null;
+}
+
+function calculateNewPosition (codes, shift) {
+  let newValue = codes.alpha + shift;
+  if (newValue > 26) {
+    newValue -= 26;
+  }
+  return newValue + codes.asciiOffset;
+
 }
 
 export { caesarCipher }
