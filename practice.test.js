@@ -47,3 +47,10 @@ test('Divide two numbers.', () => {
   expect(calculator.divide(64, 32)).toBe(2);
 });
 
+test('Multiply two numbers.', () => {
+  expect(calculator.multiply(8, 8)).toBe(64);
+});
+
+test('Multiply two numbers.', () => {
+  expect(calculator.multiply(191, 2)).toBe(382);
+});
