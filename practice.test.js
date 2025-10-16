@@ -57,7 +57,7 @@ test('Multiply two numbers.', () => {
 });
 
 // caesarCipher
-test('', () => {
+test('Test regular cipher.', () => {
   expect(caesarCipher('abc', 5)).toBe('fgh');
 });
 
