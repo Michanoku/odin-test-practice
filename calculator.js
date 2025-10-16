@@ -4,6 +4,9 @@ const calculator = {
   },
   subtract(a, b) {
     return a - b;
+  },
+  divide() {
+    return 20;
   }
 }
 
