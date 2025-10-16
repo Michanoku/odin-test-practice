@@ -34,3 +34,8 @@ test('Add two numbers.', () => {
 test('Subtract two numbers.', () => {
   expect(calculator.subtract(3, 2)).toBe(1);
 });
+
+test('Subtract two numbers.', () => {
+  expect(calculator.subtract(641, 221)).toBe(420);
+});
+
